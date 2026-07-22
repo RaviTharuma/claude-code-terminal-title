@@ -7,8 +7,9 @@ my-api | Debug: Auth Flow
 react-app | Build: Dashboard UI
 payment-service | Test: Refund Path
 ```
-
 Two ways to run it, from one install:
+**Herdr support:** when `HERDR_ENV=1` and `HERDR_PANE_ID` are set, the skill also renames the Herdr pane and publishes `pane.report-metadata` (`--title` / `--display-agent`) so the Herdr sidebar matches the outer terminal title.
+
 
 | Mode | How the title is chosen | When it fires |
 |------|-------------------------|---------------|
