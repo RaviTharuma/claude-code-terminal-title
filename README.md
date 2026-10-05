@@ -7,6 +7,7 @@ my-api | Debug: Auth Flow
 react-app | Build: Dashboard UI
 payment-service | Test: Refund Path
 ```
+
 Two ways to run it, from one install:
 
 | Mode | How the title is chosen | When it fires |
