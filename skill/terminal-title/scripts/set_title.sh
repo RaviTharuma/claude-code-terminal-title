@@ -73,6 +73,8 @@ emit_title
 # Official integrations only report lifecycle state; without this, the Herdr
 # sidebar stays as bare "claude" while only the outer terminal title updates.
 # Fail open: never break title setting if herdr is missing or errors.
+# Requires Herdr >= 0.7.4 for `pane report-metadata --token`; older builds
+# fail that call harmlessly (swallowed below). See README "Herdr" section.
 if [ "${HERDR_ENV:-}" = "1" ] && [ -n "${HERDR_PANE_ID:-}" ]; then
     HERDR_BIN="${HERDR_BIN_PATH:-herdr}"
     # Prefer the clean task title for pane labels; fall back to final title.
